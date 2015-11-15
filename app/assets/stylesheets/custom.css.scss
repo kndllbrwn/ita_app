@@ -3,6 +3,16 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+.bg1{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaP5gcamSHkSp9Ul6dLBIGiVmgglC3txDVNqFb_VFXZ0WsYB5L);
+}
+.bg2{
+    background-image: none;
+}
+.jumbotron {
+    opacity:.85;
+}
+
 .footer{
     position: fixed;
     bottom:0em;
@@ -11,5 +21,8 @@
     background: linear-gradient(to left, #232526 , #414345); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 3em;
     width:100%;
-    
+}
+.footer a{
+    position:absolute;
+    right:0em;
 }
