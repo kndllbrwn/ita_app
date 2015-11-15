@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get '/explanation' => 'pages#explanation'
+  get '/pricing' => 'pages#pricing'
+  get '/manage' => 'pages#manage'
   get '/about' => 'pages#about'
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.

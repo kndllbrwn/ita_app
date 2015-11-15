@@ -23,7 +23,10 @@
       </div>
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "About", about_path %></li>
+          <li><%= link_to "How it works", explanation_path %></li>
+          <li><%= link_to "Pricing and products", pricing_path %></li>
+          <li><%= link_to "Manage a policy", manage_path %></li>
+          <li><%= link_to "About Us", about_path %></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
@@ -31,6 +34,8 @@
   <div class="container">  
     <%= yield %>
   </div>
-
+  <footer class="footer">
+    <a href="#">Contact Us</a>
+  </footer>
 </body>
 </html>
