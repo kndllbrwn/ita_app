@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :contacts
   resources :claimants
   resources :requesters
   get '/explanation' => 'pages#explanation'
