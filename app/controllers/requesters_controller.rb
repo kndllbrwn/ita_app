@@ -5,6 +5,10 @@ class RequestersController < ApplicationController
   def create
     @requester = Requester.new(requester_params)
     if @requester.save
+      name = params[:requester][:name]
+      email = params[:requester][:email]
+      body = params[:requester][:comments]
+      RequesterMailer.requester_email(name, email, body).deliver
       flash[:success] = 'Message sent.'
       redirect_to new_requester_path, notice: "Message sent."
     else

@@ -5,6 +5,10 @@ class ClaimantsController < ApplicationController
   def create
     @claimant = Claimant.new(claimant_params)
     if @claimant.save
+      name = params[:claimant][:name]
+      email = params[:claimant][:email]
+      body = params[:claimant][:comments]
+      ClaimantMailer.claimant_email(name, email, body).deliver
       flash[:success] = 'Message sent.'
       redirect_to new_claimant_path, notice: "Message sent."
     else
