@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :claimants
+  resources :requesters
   get '/explanation' => 'pages#explanation'
   get '/pricing' => 'pages#pricing'
   get '/manage' => 'pages#manage'
