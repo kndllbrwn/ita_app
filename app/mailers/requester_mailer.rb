@@ -1,6 +1,6 @@
 class RequesterMailer < ActionMailer::Base
   default to: 'kndllbrwn1914@gmail.com'
-  def contact_email(name, email, body)
+  def requester_email(name, email, body)
     @name = name
     @email = email
     @body = body
