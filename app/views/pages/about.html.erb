@@ -9,12 +9,16 @@ customizable assurance for the off-the-beaten-path traveler.</p>
 <script>
 $(document).ready(function() {  
 
- function(){
-        $("body").removeClass('bg1').addClass('bg2');
-	};	
- $(".navbar-brand").click(function(){
-        $("body").removeClass('bg1').addClass('bg2');
-	});   
+function backgroundC(b) {
+    var  a = $("body").classname; $("body").removeClass(a).addClass(b);  
+}       
+ 
+ backgroundC('bg2');
+		
+/* $(".navbar-brand").click(function(){
+    var curClass = this.classname;
+    $("body").removeClass('curClass').addClass('bg2');
+	});   */
 });
 
 </script>
