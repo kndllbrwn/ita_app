@@ -4,28 +4,31 @@
 @import "font-awesome";
 
 .bg1{
-    background-image:url('ITA/photo1.jpg');
-    background-size:100% 140%;
+    background-image:url('ITA/photo1.jpeg');
+    background-size:100% 500%;
     background-repeat:no-repeat;
 }
 .bg2{
     background-image:url('ITA/photo2.jpg');
-    background-size:100% 140%;
+    background-size:100% 385%;
     background-repeat:no-repeat;
+    color: white;
 }
 .bg3{
     background-image:url('ITA/photo3.jpg');
-    background-size:100% 140%;
+    background-size:100% 700%;
     background-repeat:no-repeat;
+    background-position: 0% 30%;
 }
 .bg4{
     background-image:url('ITA/photo4.jpg');
-    background-size:100% 180%;
+    background-size:110% 700%;
     background-repeat:no-repeat;
+    background-position-x:-13em;
 }
 .bg5{
     background-image:url('ITA/photo5.jpg');
-    background-size:100% 180%;
+    background-size:100% 600%;
     background-repeat:no-repeat;
 }
 .jumbotron {
